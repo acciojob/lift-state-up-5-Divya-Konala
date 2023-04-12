@@ -26,7 +26,7 @@ const Parent=()=>{
                 </form>
             </div>
             :<div className='child'>
-                You are logged in!
+                <p>You are logged in!</p>
             </div>
         }
     </div>
