@@ -15,6 +15,7 @@ const Parent=()=>{
         {
             (!isLoggedIn)
             ?<div className='child'>
+                <form>
                 <label>Username:</label>
                 <input onChange={(e)=>setCredentials({...credentials,name:e.target.value})} type='text'/>
                 <br/><br/>
@@ -22,6 +23,7 @@ const Parent=()=>{
                 <input onChange={(e)=>setCredentials({...credentials,password:e.target.value})} type='password'/>
                 <br/><br/>
                 <button onClick={Login}>Login</button>
+                </form>
             </div>
             :<div className='child'>
                 You are logged in!
